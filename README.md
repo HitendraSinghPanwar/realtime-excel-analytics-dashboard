@@ -11,29 +11,11 @@ full-stack real-time dashboard built with FastAPI + Socket.IO for the backend an
 - **Visualization**: Recharts (Pie, Bar, Line, Composed charts)
 
 ---
-
-# Project Structure
-
-├── backend/
-│   ├── app/
-│   │   ├── data_handler.py      # Logic for reading & processing Excel data
-│   │   └── main.py              # FastAPI + Socket.IO + file watcher
-│   ├── venv/                   # (optional) Python virtual environment
-│   └── requirements.txt        # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   └── components/         # React chart components (BarChart, PieChart, etc.)
-│   ├── public/
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-└── README.md
-
 # Prerequisites
 
 - Python 3.11+  
 - Node.js 18+ / npm or yarn  
-- *Excel file*: Place your own Excel file in the backend (for example, I am using `data.xlsx`) that contains the needed columns.  
+- **Excel file**: Place your own Excel file in the backend (for example, I am using `data.xlsx`) that contains the needed columns.  
   Example: I’m using `data.xlsx`, and inside it has these columns:
   - `Recruiter Name`
   - `Date`
@@ -50,9 +32,9 @@ full-stack real-time dashboard built with FastAPI + Socket.IO for the backend an
 # Backend Setup
 
 1. Go to the backend directory:
-
+   ```bash
    cd backend
-
+   ```
 2. Create and activate a virtual environment (recommended):
    ```bash
    python -m venv venv
@@ -77,7 +59,7 @@ full-stack real-time dashboard built with FastAPI + Socket.IO for the backend an
 
    - Now go to the another Terminal 
 
-⚙️ Frontend Setup
+# Frontend Setup
 
 1. Go to the frontend directory:
    ```bash
